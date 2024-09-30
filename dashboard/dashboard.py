@@ -71,7 +71,7 @@ def create_byyear_df(df):
 
     return byyear_df
 
-all_df = pd.read_csv("mixed_dataset.csv")
+all_df = pd.read_csv("dashboard/mixed_dataset.csv")
 all_df.head()
 
 all_df.tail(10)
