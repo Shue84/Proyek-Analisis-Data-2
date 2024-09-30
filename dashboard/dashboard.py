@@ -16,7 +16,8 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-"""# Mempersiapkan Dataframe"""
+# Mempersiapkan Dataframe
+"""
 
 def create_yearly_weather_df(df):
     yearly_weather_df = df.resample(rule='Y', on='date').agg({
@@ -80,7 +81,8 @@ all_df['date'] = pd.to_datetime(all_df[['year', 'month', 'day']])
 
 all_df.head()
 
-"""# Membuat Komponen Filter"""
+# Membuat Komponen Filter
+"""
 
 min_date = all_df["date"].min()
 max_date = all_df["date"].max()
@@ -100,7 +102,8 @@ yearly_air_quality_df = create_yearly_air_quality_df(main_df)
 bystation_df = create_bystation_df(main_df)
 byyear_df = create_byyear_df(main_df)
 
-"""# Visualisasi Data"""
+# Visualisasi Data
+"""
 
 st.header('Air Quality in Gucheng and Huairou :sparkles:')
 
